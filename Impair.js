@@ -1,8 +1,11 @@
-function Impair(num) {
-    for (let i = 0; i <= 20; i++) {
-        if (i % 2 !== 0) {
-            console.log(i);
+function OnlyOddNumber(num) {
+    for (let i = 0; i < num.length; i++) {
+        for (let j = 0; j < num[i].length; j++) {
+            if (num[i] !== num[j]){
+                return num[i];
+            }
         }
- 
+    }
 }
-console.log(Impair());
+let array1 = [1,1,2,2,4,5,5];
+console.log(OnlyOddNumber(array1));
